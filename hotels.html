@@ -31,8 +31,34 @@
         <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
-            <li>
-              <input class="visually-hidden" type="checkbox" >
+            <li class="filter-option">
+              <input class="visually-hidden filter-input" type="checkbox" name="pool" id="pool-field" checked>
+              <label for="pool-field">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking-field">
+              <label for="parking-field">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input" type="checkbox" name="wifi" id="wifi-field">
+              <label for="wifi-field">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="type-housing">
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="hotel-field" checked>
+              <label for="hotel-field">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input" type="checkbox" name="motel" id="motel-field" checked>
+              <label for="motel-field">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments-field" checked>
+              <label for="apartments-field">Гостиница</label>
             </li>
           </ul>
         </fieldset>
@@ -76,4 +102,3 @@
 </body>
 
 </html>
-
