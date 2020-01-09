@@ -57,14 +57,53 @@
               <label for="motel-field">Гостиница</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments-field" checked>
-              <label for="apartments-field">Гостиница</label>
+              <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments-field"
+                checked>
+              <label for="apartments-field">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
-
       </form>
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="btn-transparent" type="submit">Показать</button>
+      </div>
     </section>
+    <section class="">
+      <p>Найдено: 3</p>
+      <div class="sort">
+        <b>Сортировка:</b>
+        <ul class="sort-list">
+          <li class="sort-item sort-price">
+            <a href="#">По цене</a>
+          </li>
+          <li class="sort-item sort-type">
+            <a href="#">По типу</a>
+          </li>
+          <li class="sort-item sort-rating">
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <p class="sort-buttons">
+          <a href="#" class="button-down"><span class="visually-hidden">по убыванию</span></a>
+          <a href="#" class="button-up"><span class="visually-hidden">по возрастанию</span></a>
+        </p>
+      </div>
+      <h2 class=""></h2>
+
+    </section>
+
     <footer class="main-footer">
       <p class="footer-hashtag">
         <a href="#">
