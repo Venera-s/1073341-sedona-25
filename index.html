@@ -94,12 +94,40 @@
           <input class="search-form" type="text" name="departure" id="departure-field" placeholder="4 июля 2017">
         </p>
         <p>
-          <!-- <label for="adults-field">Взрослые</label> -->
-          <!-- <input type=""> -->
+          <label for="adults-field">Взрослые:</label>
+          <input type="text" name="adults" id="adults-field" placeholder="2">
+          <button class="reduce-adults" type="button" aria-label="Уменьшить количество взрослых">
+            <svg height="12" viewBox="0 0 32 32" width="12">
+              <path
+                d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z">
+              </path>
+            </svg>
+          </button>
+          <button class="add-adults" type="button" aria-label="Увеличить количество взрослых">
+            <svg height="11" viewBox="0 0 32 32" width="11">
+              <path
+                d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z">
+              </path>
+            </svg>
+          </button>
         </p>
         <p>
-          <!-- <label for="children-field">Дети</label> -->
-          <!-- <input type=""> -->
+          <label for="children-field">Дети:</label>
+          <input type="text" name="children" id="children-field" placeholder="0">
+          <button class="reduce-children" type="button" aria-label="Уменьшить количество детей">
+            <svg height="12" viewBox="0 0 32 32" width="12">
+              <path
+                d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z">
+              </path>
+            </svg>
+          </button>
+          <button class="add-children" type="button" aria-label="Уменьшить количество детей">
+            <svg height="12" viewBox="0 0 32 32" width="12">
+              <path
+                d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z">
+              </path>
+            </svg>
+          </button>
         </p>
         <button class="btn-search" type="submit">Найти</button>
       </form>
@@ -122,7 +150,7 @@
           </li>
           <li>
             <a class="social-button" href="#">
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Седоне в Фейсбуке">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбуке">
             </a>
           </li>
           <li>
