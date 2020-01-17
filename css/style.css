@@ -7,13 +7,17 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
+}
+
+.img {
+  width: 100%;
 }
 
 .visually-hidden {
@@ -33,6 +37,31 @@ a {
 
 .main-navigation {
   line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #766357;
+}
+
+.header-promo {
+  text-align: center;
 }
 
 .header-title {
@@ -45,15 +74,71 @@ a {
   line-height: 26px;
 }
 
-.feature-title,
-.advantage-title {
-  font-size: 31px;
+.features-list,
+.advantages-list {
+  list-style: none;
+}
+
+.features-list > li:first-child,
+.features-list > li:nth-child(2) {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-list h3,
+.features-list h4 {
+  font-size: 21px;
+}
+
+.feature-item,
+.advantage-item {
+  text-align: center;
+}
+
+.advantages-list {
+  background-color: #eeeeee;
+}
+
+.search-question {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
 }
 
+.search-date {
+  text-align: center;
+  line-height: 24px;
+}
 
+.btn-form {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
 
+.btn-form:hover {
+  background-color: #604e43;
+}
 
+.btn-form:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.search-item input {
+  font: inherit;
+  line-height: 26px;
+  font-weight: 700;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.search-item input::placeholder {
+  color: #000000;
+}
 
 
 
