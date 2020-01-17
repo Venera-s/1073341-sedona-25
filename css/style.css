@@ -132,14 +132,22 @@ a {
   font: inherit;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   border: none;
   background-color: #f2f2f2;
+}
+
+.search-item label {
+  font-weight: 700;
 }
 
 .search-item input::placeholder {
   color: #000000;
 }
 
+.btn-search {
+
+}
 
 
 /*
