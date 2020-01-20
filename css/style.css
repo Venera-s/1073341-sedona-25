@@ -34,7 +34,6 @@ a {
   clip: rect(0 0 0 0);
 }
 
-
 .main-navigation {
   line-height: 26px;
   color: #000000;
@@ -57,7 +56,7 @@ a {
 }
 
 .site-navigation a:focus {
-  color: #766357;
+  color: #cacaca;
 }
 
 .header-promo {
@@ -128,13 +127,21 @@ a {
   background-color: #503e33;
 }
 
-.search-item input {
+.search-item input[type="text"] {
   font: inherit;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
   background-color: #f2f2f2;
+}
+
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+
+.search-item input:focus {
+  background-color: #ffffff;
 }
 
 .search-item label {
@@ -145,15 +152,125 @@ a {
   color: #000000;
 }
 
-.btn-search {
-
+.btn-amount {
+  display: block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  background-color: transparent;
+  fill: #a9a9a9;
+  border: none;
 }
 
+.btn-amount:hover path {
+  fill: #000000;
+}
 
-/*
+.btn-amount:focus path {
+  fill: #81b3d2;
+}
 
-Фильтр-ползунок
+.btn-search {
+  display: block;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+}
 
+.btn-search:hover {
+  background-color: #669ec0;
+}
+
+.btn-search:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.footer-hashtag a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active  {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill-opacity: 0.3;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright span {
+  line-height: 26px;
+}
+
+.logo-copyright:hover path {
+  fill: #81b3d2;
+}
+
+.logo-copyright:active path{
+  fill: #bdbbbc;
+}
+
+.hotel-search {
+  background-color: #885d56;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter label {
+  color: #ffffff;
+}
+
+/*начало фильтр ползунок*/
 .filter-range {
   width: 330px;
   margin: 50px auto;
@@ -288,6 +405,5 @@ a {
 
   background: #ffffff;
 }
+/*конец фильтр ползунок*/
 
-
-*/
