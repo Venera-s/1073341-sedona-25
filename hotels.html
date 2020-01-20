@@ -19,7 +19,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a class="site-navigation-current" href="#">Гостиницы</a></li>
+        <li class="site-navigation-current"><a>Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -54,7 +54,7 @@
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input" type="checkbox" name="motel" id="motel-field" checked>
-              <label for="motel-field">Гостиница</label>
+              <label for="motel-field">Мотель</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments-field"
@@ -80,7 +80,7 @@
         <button class="btn-transparent" type="submit">Показать</button>
       </div>
     </section>
-    <section class="">
+    <section class="sorting">
       <p>Найдено: 3</p>
       <div class="sort">
         <b>Сортировка:</b>
@@ -88,10 +88,10 @@
           <li class="sort-item sort-price">
             <a href="#">По цене</a>
           </li>
-          <li class="sort-item sort-type">
+          <li class="sort-item">
             <a href="#">По типу</a>
           </li>
-          <li class="sort-item sort-rating">
+          <li class="sort-item">
             <a href="#">По рейтингу</a>
           </li>
         </ul>
@@ -101,13 +101,13 @@
         </p>
       </div>
       <h2 class="visually-hidden">Выбор жилья в Седоне</h2>
-      <ul>
+      <ul class="housing-list">
         <li>
           <article class="hotel-amara">
             <img src="img/amara_resort.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa в Седоне">
             <div class="card-info">
-              <h3><a href="#">Amara Resort & Spa</a></h3>
-              <p>Гостиницы</p>
+              <h3 class="housing-title"><a href="#">Amara Resort & Spa</a></h3>
+              <p>Гостиница</p>
               <p>от 4000 р.</p>
               <a class="btn btn-detailed" href="#">Подробнее</a>
               <a class="btn-book" href="#">Забронировать</a>
@@ -118,8 +118,8 @@
         <li>
           <article class="motel-desert">
             <img src="img/motel-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn в Седоне">
-            <div class="card-inf0">
-              <h3><a href="#">Desert Quail Inn</a></h3>
+            <div class="card-info">
+              <h3 class="housing-title"><a href="#">Desert Quail Inn</a></h3>
               <p>Мотель</p>
               <p>от 3000 р.</p>
               <a class="btn btn-detailed" href="#">Подробнее</a>
@@ -132,8 +132,8 @@
           <article class="apartments-villas">
             <img src="img/apartments-villas.jpg" width="135" height="90"
               alt="Апартаменты Villas at Poco Diablo в Седоне">
-            <div class="card-inf0">
-              <h3><a href="#">Villas at Poco Diablo</a></h3>
+            <div class="card-info">
+              <h3 class="housing-title"><a href="#">Villas at Poco Diablo</a></h3>
               <p>Апартаменты</p>
               <p>от 2000 р.</p>
               <a class="btn btn-detailed" href="#">Подробнее</a>

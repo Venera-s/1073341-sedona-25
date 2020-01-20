@@ -51,12 +51,17 @@ a {
   color: #000;
 }
 
-.site-navigation a:hover {
+.site-navigation a[href]:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:focus {
-  color: #cacaca;
+.site-navigation a[href]:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a {
+  color: #766357;
+  cursor: default;
 }
 
 .header-promo {
@@ -268,7 +273,72 @@ a {
 
 .filter label {
   color: #ffffff;
+  cursor: pointer;
 }
+
+.sorting p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort b {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort-list a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-item:first-child a {
+  color: #81b3d2;
+  cursor: default;
+}
+
+.sort-item:not(:first-child) a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dashed;
+}
+
+.sort-item:not(:first-child) a:hover {
+  color: #81b3d2;
+}
+
+.sort-item:not(:first-child) a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.housing-list {
+  list-style: none;
+}
+
+.housing-title a {
+  font-size: 21px;
+  line-height: 26px;
+  /* font-weight: 700; */
+  color: #000000;
+}
+
+.housing-title a:hover {
+  color: #81b3d2;
+}
+
+.housing-title a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
 
 /*начало фильтр ползунок*/
 .filter-range {
