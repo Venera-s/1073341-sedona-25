@@ -20,6 +20,14 @@ a {
   width: 100%;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -34,7 +42,23 @@ a {
   clip: rect(0 0 0 0);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.main-header-logo {
+  width: 140px;
+  height: 71px;
+}
+
+
 .main-navigation {
+  margin: 0;
+  padding: 0;
   line-height: 26px;
   color: #000000;
 
@@ -42,6 +66,8 @@ a {
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -161,7 +187,7 @@ a {
 
 .btn-amount {
   display: block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   vertical-align: middle;
   text-align: center;
   background-color: transparent;
@@ -180,7 +206,7 @@ a {
 
 .btn-search {
   display: block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
