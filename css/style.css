@@ -52,12 +52,17 @@ html {
 .main-header-logo {
   position: absolute;
   left: 50%;
+  top: 0;
+  margin-right: -69px;
   width: 140px;
   height: 71px;
 }
 
 .main-navigation {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 73px;
   padding: 0;
   line-height: 26px;
   color: #000000;
@@ -68,9 +73,9 @@ html {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  margin-top: 20px;
-  padding: 0 72px;
+  width: 1056px;
+  margin: 20px 0 0 0;
+  padding: 0 146px 0px 0px;
   list-style: none;
 }
 
