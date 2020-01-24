@@ -52,18 +52,14 @@ html {
 .main-header-logo {
   position: absolute;
   left: 50%;
-  top: 0;
-  margin-right: -69px;
   width: 140px;
-  height: 71px;
+  height: 68px;
+  transform: translateX(-50%);
 }
 
 .main-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 0 73px;
-  padding: 0;
+  height: 56px;
   line-height: 26px;
   color: #000000;
 
@@ -72,17 +68,40 @@ html {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   width: 1056px;
-  margin: 20px 0 0 0;
-  padding: 0 146px 0px 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .site-navigation a {
+  display: block;
+  width: 200px;
+  padding: 14px 0 0 0;
   line-height: 26px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
+}
+
+.site-navigation li:nth-child(1) a,
+.site-navigation li:nth-child(2) a {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2) a {
+  margin-right: 131px;
+}
+
+.site-navigation li:nth-child(3) a,
+.site-navigation li:nth-child(4) a {
+  text-align: right;
+}
+
+.site-navigation li:nth-child(3) a {
+  letter-spacing: 0.3px;
 }
 
 .site-navigation a[href]:hover,
@@ -97,6 +116,29 @@ html {
 .site-navigation-current a {
   color: #766357;
   cursor: default;
+}
+
+.intro-welcome {
+  padding: 76px 0 79px 0;
+  background-image: url("../img/background_welcome.jpg");
+  background-position: 0% 20%;
+  background-repeat: no-repeat;
+}
+
+.intro-welcome img {
+  display: block;
+  margin: 0 auto;
+}
+
+.intro-welcome::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 5000px;
+  height: 73px;
+  background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
+  transform: translateY(30%);
 }
 
 .header-promo {
