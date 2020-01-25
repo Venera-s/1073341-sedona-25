@@ -59,7 +59,7 @@ html {
 
 .main-navigation {
   margin: 0 73px;
-  height: 56px;
+  min-height: 56px;
   line-height: 26px;
   color: #000000;
 
@@ -121,7 +121,7 @@ html {
 .intro-welcome {
   padding: 76px 0 79px 0;
   background-image: url("../img/background_welcome.jpg");
-  background-position: 0% 20%;
+  background-position: 0% 21%;
   background-repeat: no-repeat;
 }
 
@@ -142,10 +142,13 @@ html {
 }
 
 .header-promo {
+  padding: 60px 0 0 0;
   text-align: center;
 }
 
 .header-title {
+  width: 443px;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
