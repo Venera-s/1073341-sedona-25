@@ -156,6 +156,25 @@ html {
   list-style: none;
 }
 
+.features-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dunk1 {
+  display: flex;
+  width: 400px;
+}
+.dunk2 {
+  display: flex;
+  width: 400px;
+}
+.dunk3 {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
 .feature-text {
   width: 400px;
   padding: 46px 0 20px 0;
@@ -192,25 +211,27 @@ html {
   display: flex;
 }
 
-.feature-block {
+/* .features-list .feature-block {
   display: flex;
+  justify-content: space-between;
   background-color: #eeeeee;
-}
+} */
 
-.feature-block div{
+.feature-block{
   width: 400px;
 }
 
 
-.feature-block h3,
+/* .feature-block h3,
 .feature-block p,
 .feature-block span {
   margin: 0;
   padding: 0;
-}
+} */
 
 .advantages-list {
   display: flex;
+  order: 0;
 }
 
 .advantage-item {
