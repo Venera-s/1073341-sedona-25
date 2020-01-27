@@ -161,19 +161,11 @@ html {
   flex-direction: column;
 }
 
-.dunk1 {
-  display: flex;
+/* .feature-item{
   width: 400px;
-}
-.dunk2 {
-  display: flex;
-  width: 400px;
-}
-.dunk3 {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-}
+  padding: 46px 0 20px 0;
+} */
+
 
 .feature-text {
   width: 400px;
