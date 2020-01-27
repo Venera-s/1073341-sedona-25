@@ -46,7 +46,7 @@ html {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-  background-color: #ffffff;
+  background-color: lightpink;
 }
 
 .main-header-logo {
@@ -156,37 +156,55 @@ html {
   list-style: none;
 }
 
+.features,
 .features-list {
   display: flex;
   flex-direction: column;
-}
-
-/* .feature-item{
-  width: 400px;
-  padding: 46px 0 20px 0;
-} */
-
-
-.feature-text {
-  width: 400px;
-  padding: 46px 0 20px 0;
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.feature-text h3 {
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0 139px 25px 139px;
+  padding: 0;
 }
 
-.feature-text span {
-  display: block;
-  padding: 0 0 20px 0;
+
+.feature-inside {
+  display: flex;
+  flex-wrap: wrap;
+  order: 5;
+
 }
 
-.feature-text p {
-  margin: 0;
-  padding: 0 60px 35px;
+.advantage-item {
+background-color: lightgreen;
+}
+
+.feature-town,
+.feature-bridge {
+  display: flex;
+}
+
+.feature-bridge {
+  flex-direction: row-reverse;
+}
+
+.feature-town {
+  order: -2;
+}
+
+.feature-bridge {
+  order: 5;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  order: -1;
+}
+
+.advantage-item {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .features-list h3,
@@ -194,41 +212,50 @@ html {
   font-size: 21px;
 }
 
+
+.feature-up {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+
 .feature-item,
 .advantage-item {
   text-align: center;
 }
 
-.feature-block-photo {
-  display: flex;
-}
-
-/* .features-list .feature-block {
-  display: flex;
-  justify-content: space-between;
-  background-color: #eeeeee;
-} */
-
-.feature-block{
+.feature-text {
   width: 400px;
 }
 
+.feature-photo img {
+  height: 100%;
+}
 
-/* .feature-block h3,
-.feature-block p,
-.feature-block span {
+
+
+.feature-text h3 {
+  margin: 0 auto;
+  padding: 44px 0px 25px 0px;
+}
+
+.feature-text p {
   margin: 0;
-  padding: 0;
-} */
-
-.advantages-list {
-  display: flex;
-  order: 0;
+  padding: 0 47px 35px;
 }
 
-.advantage-item {
-  width: 400px;
+.feature-text span {
+  display: block;
+  padding: 0 0 20px 0;
 }
+
+.feature-down {
+  background-color: #eeeeee;
+}
+
+
+
+
 
 .search-question {
   text-align: center;
