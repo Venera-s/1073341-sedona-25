@@ -230,8 +230,9 @@ html {
 }
 
 .feature-text p {
-  margin: 0;
-  padding: 0 40px 35px 40px;
+  width: 302px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .feature-text span {
@@ -240,36 +241,47 @@ html {
 }
 
 .feature-down {
+  color: #333333;
   background-color: #eeeeee;
 }
 
-/* .advantage-housing {
-  background: url("../img/housing.png") 50% 31%;
+.feature-down p {
+  width: 264px;
+  padding-bottom: 58px;
+}
+
+
+.advantages-list .advantage-housing {
+  background: url("../img/housing.png") 50% 23%;
   background-repeat: no-repeat;
 }
 
-.advantage-food {
-  background: url("../img/food.png") 50% 31%;
+.advantages-list .advantage-food {
+  background: url("../img/food.png") 50% 24%;
   background-repeat: no-repeat;
 }
 
-.advantage-souvenirs {
-  background: url("../img/souvenirs.png") 50% 29%;
+.advantages-list .advantage-souvenirs {
+  background: url("../img/souvenirs.png") 50% 22%;
   background-repeat: no-repeat;
-} */
+}
 
+.advantages-list h4 {
+  margin: 0 auto;
+  padding: 26px 0 25px 0;
+}
 
-.advantage-item h4 {
+.advantage-item {
   padding: 135px 0 0px;
 }
 
 
- /* .advantage-item p {
-   padding: 10px 23px 82px 73px;
- } */
-
-
-
+ .advantage-item p {
+   width: 288px;
+   margin: 0 auto;
+   padding: 0 0 81px 0;
+   color: #333333;
+ }
 
 .search-question {
   text-align: center;
