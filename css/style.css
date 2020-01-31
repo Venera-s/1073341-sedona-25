@@ -282,10 +282,14 @@ html {
    padding: 0 0 81px 0;
    color: #333333;
  }
+/*
+.search-hotel {
+  background: url("../img/map.jpg");
+} */
 
 .search-question {
   text-align: center;
-  margin: 50px 0 23px;
+  margin: 50px 0 24px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -295,6 +299,11 @@ html {
   text-align: center;
   line-height: 24px;
 }
+
+.search-form {
+  display: none;
+}
+
 
 .btn-form {
   font-size: 21px;
@@ -384,29 +393,40 @@ html {
 }
 
 .main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 101px 26px 132px;
   color: #000000;
-  background-color: #ffffff;
-  opacity: 0.9;
+  background-color: rgba(251, 253, 249, 0.9);
 }
 
 .footer-hashtag a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-right: 33px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.footer-social {
-  text-align: center;
-}
 
-.footer-social li {
+.footer-social ul {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0;
+  padding: 3px 0 0 0;
   list-style: none;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
+
 }
 
 .social-button:hover,
@@ -423,10 +443,14 @@ html {
 }
 
 .footer-copyright {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  width: 200px;
 }
 
 .footer-copyright span {
+  padding-top: 6px;
   line-height: 26px;
 }
 
