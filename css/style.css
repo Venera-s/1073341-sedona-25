@@ -51,7 +51,7 @@ html {
   background-color: #ffffff;
 }
 
-/*HEADER */
+/*----------------------------------------HEADER----------------------------------------*/
 
 .main-header-logo {
   position: absolute;
@@ -174,7 +174,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   order: 5;
-
 }
 
 .feature-town,
@@ -211,12 +210,10 @@ html {
   font-size: 21px;
 }
 
-
 .feature-up {
   color: #ffffff;
   background-color: #81b3d2;
 }
-
 
 .feature-item,
 .advantage-item {
@@ -252,7 +249,6 @@ html {
   width: 264px;
   padding-bottom: 58px;
 }
-
 
 .advantages-list .advantage-housing {
   background: url("../img/housing.png") 50% 23%;
@@ -323,7 +319,10 @@ html {
 }
 
 .search-form {
-  display: none;
+  display: block;
+  width: 568px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .search-item input[type="text"] {
@@ -404,7 +403,7 @@ html {
   margin: 0 auto;
   width: 1200px;
   color: #000000;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(254, 254, 254, 0.9);
 }
 
 .footer-container {
