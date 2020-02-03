@@ -28,6 +28,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -41,6 +45,8 @@ html {
 
   clip: rect(0 0 0 0);
 }
+
+
 
 .container {
   width: 1200px;
@@ -282,33 +288,30 @@ html {
    padding: 0 0 81px 0;
    color: #333333;
  }
-/*
-.search-hotel {
-  background: url("../img/map.jpg");
-} */
 
-.search-question {
+.search-hotel .search-question {
   text-align: center;
-  margin: 50px 0 24px;
+  margin: 50px 20px 24px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.search-date {
+.search-hotel .search-date {
   text-align: center;
   line-height: 24px;
+  margin: 0 20px 47px;
 }
 
-.search-form {
-  display: none;
-}
-
-
-.btn-form {
+.search-hotel .btn-form {
+  display: block;
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  padding: 30px;
+  margin: 0 auto;
+  width: 568px;
   color: #ffffff;
   background-color: #766357;
 }
@@ -322,6 +325,11 @@ html {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+
+.search-form {
+  display: none;
+}
+
 
 .search-item input[type="text"] {
   font: inherit;
@@ -392,21 +400,34 @@ html {
   background-color: #5496bd;
 }
 
+.map img {
+  display: block;
+
+}
+
 .main-footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 1200px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-container {
   display: flex;
   justify-content: space-between;
   padding: 27px 101px 26px 132px;
   color: #000000;
-  background-color: rgba(251, 253, 249, 0.9);
+  background-color: transparent;
 }
 
 .footer-hashtag a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-right: 33px;
+  margin-right: 30px;
   color: #000000;
-  background-color: #ffffff;
 }
 
 
@@ -446,7 +467,7 @@ html {
   display: flex;
   justify-content: space-between;
   padding-top: 6px;
-  width: 200px;
+  width: 197px;
 }
 
 .footer-copyright span {
