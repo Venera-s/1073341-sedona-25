@@ -296,6 +296,7 @@ html {
 }
 
 .btn-form {
+  position: relative;
   display: block;
   padding: 30px 10px;
   width: 568px;
@@ -318,20 +319,52 @@ html {
   background-color: #503e33;
 }
 
+.modal-form {
+  position: relative;
+}
+
 .search-form {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 316px;
   width: 568px;
+  padding: 55px;
   color: #000000;
   background-color: #ffffff;
 }
 
 .search-item input[type="text"] {
   font: inherit;
+  width: 346px;
+  margin: 0;
+  padding: 6px 13px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
   background-color: #f2f2f2;
+}
+
+p.search-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 29px 0;
+}
+
+.search-amount input[type="text"] {
+  text-align: center;
+  width: 114px;
+}
+
+p.search-amount {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
 }
 
 .search-item input:hover {
@@ -352,8 +385,7 @@ html {
 
 .btn-amount {
   display: block;
-  /* box-sizing: border-box; */
-  vertical-align: middle;
+  position: absolute;
   text-align: center;
   background-color: transparent;
   fill: #a9a9a9;
@@ -369,9 +401,31 @@ html {
   fill: #81b3d2;
 }
 
+.reduce-adults {
+  top: 12px;
+  left: 120px;
+}
+
+.add-adults {
+  top: 12px;
+  left: 195px;
+}
+
+.reduce-children {
+  top: 12px;
+  right: 82px;
+}
+
+.add-children {
+  top: 12px;
+  right: 7px;
+}
+
 .btn-search {
   display: block;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  padding: 16px;
+  width: 100%;
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
@@ -429,6 +483,7 @@ html {
 
 .footer-social ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
   margin: 0;
