@@ -324,6 +324,7 @@ html {
 }
 
 .search-form {
+  display: none;
   position: absolute;
   top: 0;
   left: 316px;
@@ -331,6 +332,7 @@ html {
   padding: 55px;
   color: #000000;
   background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .search-item input[type="text"] {
