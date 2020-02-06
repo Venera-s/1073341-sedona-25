@@ -589,21 +589,37 @@ p.search-amount {
 }
 
 .filter-option  {
-  margin: 0 0 25px 40px;
+  position: relative;
+  margin: 0 0 25px 0;
 }
 
 .filter-form legend {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .filter-form label {
+  padding-left: 40px;
   color: #ffffff;
   cursor: pointer;
+}
+
+
+.filter-option label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url('../img/checkbox-off.svg');
+  background-repeat: no-repeat;
+}
+
+.filter-form label:hover::before {
 }
 
 .sorting > p {
