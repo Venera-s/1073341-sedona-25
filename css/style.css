@@ -559,25 +559,49 @@ p.search-amount {
   fill: #bdbbbc;
 }
 
-.hotel-search {
+/*-------------------------------Hotels page - Hotel search-----------------------------*/
+
+.filter-hotel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url('../img/filter_background.jpg');
   background-color: #885d56;
 }
 
-.filter fieldset {
+.filter-form {
+  display: flex;
+  width: 550px;
+  padding: 27px 71px 31px;
+}
+
+.filter-form fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
-.filter ul {
+.filter-form ul {
+  width: 235px;
+  margin: 0 20px 0 0;
+  padding: 0;
   list-style: none;
 }
 
-.filter legend {
+.filter-option  {
+  margin: 0 0 25px 40px;
+}
+
+.filter-form legend {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.filter label {
+.filter-form label {
   color: #ffffff;
   cursor: pointer;
 }
@@ -689,10 +713,13 @@ p.search-amount {
 
 
 
+
+
+
 /*начало фильтр ползунок*/
 .filter-range {
   width: 330px;
-  margin: 50px auto;
+  margin: 27px 59px 27px 85px;
 
   color: #ffffff;
   text-transform: uppercase;
