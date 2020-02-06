@@ -472,12 +472,16 @@ p.search-amount {
   display: block;
 }
 
-.main-footer {
-  position: absolute;
+.footer-main {
   bottom: 0;
   margin: 0 auto;
   width: 1200px;
   color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-index {
+  position: absolute;
   background-color: rgba(254, 254, 254, 0.9);
 }
 
