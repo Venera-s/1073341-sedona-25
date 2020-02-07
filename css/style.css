@@ -62,7 +62,7 @@ html {
 }
 
 .main-navigation {
-  margin: 0 73px;
+  margin: 0 72px;
   min-height: 56px;
   line-height: 26px;
   color: #000000;
@@ -251,18 +251,15 @@ html {
 }
 
 .advantages-list .advantage-housing {
-  background: url("../img/housing.png") 50% 23%;
-  background-repeat: no-repeat;
+  background: url("../img/housing.png") 50% 23% no-repeat;
 }
 
 .advantages-list .advantage-food {
-  background: url("../img/food.png") 50% 24%;
-  background-repeat: no-repeat;
+  background: url("../img/food.png") 50% 24% no-repeat;
 }
 
 .advantages-list .advantage-souvenirs {
-  background: url("../img/souvenirs.png") 50% 22%;
-  background-repeat: no-repeat;
+  background: url("../img/souvenirs.png") 50% 22% no-repeat;
 }
 
 .advantages-list h4 {
@@ -559,7 +556,7 @@ p.search-amount {
   fill: #bdbbbc;
 }
 
-/*-------------------------------Hotels page - Hotel search-----------------------------*/
+/*-------------------------------HOTELS PAGES---FILTERS-----------------------------*/
 
 .filter-hotel {
   display: flex;
@@ -572,7 +569,7 @@ p.search-amount {
 .filter-form {
   display: flex;
   width: 550px;
-  padding: 27px 72px 31px;
+  padding: 27px 72px 6px;
 }
 
 .filter-form fieldset {
@@ -596,7 +593,7 @@ p.search-amount {
 .filter-form legend {
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
@@ -608,33 +605,69 @@ p.search-amount {
   cursor: pointer;
 }
 
-
-.filter-option label::before {
+.filter-input + label::before,
+.filter-input + label:hover::before {
   content: "";
   position: absolute;
   left: 0;
   width: 23px;
   height: 23px;
-  background-image: url('../img/checkbox-off.svg');
-  background-repeat: no-repeat;
+  background: url('../img/checkbox-off.svg') no-repeat;
 }
 
-.filter-form label:hover::before {
+.filter-input:checked + label::before {
+  width: 27px;
+  height: 23px;
+  background: url('../img/checkbox-on.svg') no-repeat;
 }
 
-.sorting > p {
+.filter-input:disabled + label::before,
+.filter-input:checked:disabled + label::before {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.filter-input:disabled + label,
+.filter-input:checked:disabled + label {
+  opacity: 0.8;
+  cursor: default;
+}
+
+/*---------------------------------------HOUSING - CHOICE---------------------------------------*/
+
+.housing-choice {
+  margin: 0 72px 0;
+}
+
+.sort {
+  display: flex;
+}
+
+.housing-find {
+  display: block;
+  margin: 30px 47px 32px 0;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
 .sort b {
+  margin-top: 36px;
+  margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
 }
 
 .sort ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.sort-list {
+  display: flex;
+  align-items: center;
 }
 
 .sort-list a {
@@ -643,31 +676,66 @@ p.search-amount {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort-item:first-child a {
+.sort-item {
+  padding-right: 33px;
+}
+
+.sort-link {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+.sort-link:hover,
+.sort-link:focus {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-link:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+a.active-link {
+  border: none;s
   color: #81b3d2;
   cursor: default;
 }
 
-.sort-item:not(:first-child) a {
-  color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
-  text-decoration-color: #81b3d2;
-  text-decoration-style: dashed;
-}
-
-.sort-item:not(:first-child) a:hover,
-.sort-item:not(:first-child) a:focus {
-  color: #81b3d2;
-}
-
-.sort-item:not(:first-child) a:active {
-  color: #000000;
-  text-decoration: none;
-}
-
 .housing-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
+.sort-buttons {
+  display: flex;
+  margin-top: 40px;
+  margin-left: auto;
+  position: relative;
+}
+
+.button-sort {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+}
+
+a.button-down {
+  border: 7px solid red;
+  border-top-color: gray;
+
+  /* margin-right: 13px;
+  background: url('../img/icon-up-dir.svg') no-repeat; */
+}
+
+a.button-up {
+  background: url('../img/icon-down-dir.svg') no-repeat;
+}
+
+a.button-
+
+/*---------------------------------------HOUSING - CHOICE ---HOUSING-LIST-------------------------------------------*/
 
 .card-info .housing-title a {
   font-size: 21px;
