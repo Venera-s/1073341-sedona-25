@@ -45,7 +45,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   background-color: #ffffff;
@@ -640,12 +640,11 @@ fill: #bdbbbc;
 
 /*---------------------------------------HOUSING - CHOICE---------------------------------------*/
 
-.housing-choice {
-  margin: 0 72px 0;
-}
-
 .sort {
   display: flex;
+  margin-bottom: 23px;
+  padding: 0 72px 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .housing-find {
@@ -720,10 +719,6 @@ fill: #bdbbbc;
   position: relative;
 }
 
-.sort-buttons {
-
-}
-
 .button-up {
   margin-right: 15px;
   width: 0;
@@ -753,6 +748,39 @@ fill: #bdbbbc;
 
 /*---------------------------------------HOUSING - CHOICE ---HOUSING-LIST-------------------------------------------*/
 
+.housing-list article {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 72px 30px 72px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.housing-list img {
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+.card-info {
+  width: 780px;
+}
+
+.card-info h3 {
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.housing-price {
+  margin-bottom: 17px;
+}
+
+.housing-price p {
+  display: inline-block;
+  margin: 0;
+  padding-right: 35px;
+}
+
 .card-info .housing-title a {
   font-size: 21px;
   line-height: 26px;
@@ -776,6 +804,9 @@ fill: #bdbbbc;
 }
 
 .card-info .btn-detailed {
+  min-width: 110px;
+  margin-right: 2px;
+  padding: 4px 17px;
   background-color: #81b3d2;
 }
 
@@ -790,6 +821,9 @@ fill: #bdbbbc;
 }
 
 .card-info .btn-book {
+  min-width: 110px;
+  margin-right: 10px;
+  padding: 4px 17px;
   background-color: #766357;
 }
 
@@ -803,16 +837,32 @@ fill: #bdbbbc;
   background-color: #503e33;
 }
 
+/* .housing-raiting {
+  display: flex;
+} */
+
 .card-info .rating {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  min-width: 110px;
+  margin: 0;
+  margin-left: auto;
   color: #666666;
   background-color: #f2f2f2;
 }
 
+.rating-sum .rating {
+  display: inline-block;
+  margin: 0;
+}
 
-
-
-
-
+.star-icon::before {
+  content: "";
+  width: 18px;
+  height: 17px;
+  background: url('../img/star.svg');
+}
 
 
 
