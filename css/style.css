@@ -55,13 +55,18 @@ html {
 
 .main-header-logo {
   position: absolute;
-  left: 50%;
-  max-width: 140px;
+  top: 0;
+  right: 0;
+  bottom:  0;
+  left: 0;
+  width: 140px;
   height: 68px;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-navigation {
+  position: relative;
   margin: 0 72px;
   min-height: 56px;
   line-height: 26px;
