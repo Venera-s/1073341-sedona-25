@@ -325,6 +325,10 @@ html {
   position: relative;
 }
 
+.modal-show {
+  display: block;
+}
+
 .search-form {
   display: none;
   position: absolute;
