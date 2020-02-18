@@ -442,6 +442,7 @@ p.search-amount {
 }
 
 .search-item input:focus {
+  outline: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
 
