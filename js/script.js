@@ -3,26 +3,25 @@ var link = document.querySelector(".btn-form");
 var popup = document.querySelector(".modal-form");
 
 var form = document.querySelector("form");
-var arrival1 = document.querySelector("[name=arrival]");
-var departure2 = document.querySelector("[name=departure]");
-var adults3 = document.querySelector("[name=adults]");
-var children4 = document.querySelector("[name=children]");
+var arrival = document.querySelector("[name=arrival]");
+var departure = document.querySelector("[name=departure]");
+var adults = document.querySelector("[name=adults]");
+var children = document.querySelector("[name=children]");
+
+var overlay = document.querySelector(".overlay");
 
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-show");
+  popup.classList.toggle("modal-show");
+  overlay.classList.toggle("overlay-show");
+  popup.classList.remove("modal-error");
   arrival.focus();
 });
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
-});
 
 form.addEventListener("submit", function (evt) {
-  if (!arrival1.value || !departure2.value || !adults3.value || !children4.value) {
+  if (!arrival.value || !departure.value || !adults.value || !children.value) {
   evt.preventDefault();
   popup.classList.remove("modal-error");
   popup.offsetWidth = popup.offsetWidth;
@@ -30,13 +29,19 @@ form.addEventListener("submit", function (evt) {
 }
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show"))
-    {
+    if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
+      overlay.classList.remove("overlay-show");
     }
   }
+});
+
+overlay.addEventListener("click", function () {
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+  overlay.classList.remove("overlay-show");
 });

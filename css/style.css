@@ -299,6 +299,7 @@ html {
 
 .btn-form {
   position: relative;
+  z-index: 10;
   display: block;
   padding: 30px 10px;
   max-width: 568px;
@@ -339,14 +340,14 @@ html {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(-15px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(15px);
   }
 }
 
@@ -365,6 +366,7 @@ html {
 .search-form {
   position: absolute;
   top: 0;
+  z-index: 10;
   left: 316px;
   width: 568px;
   padding: 55px;
@@ -375,16 +377,30 @@ html {
 
 .modal-show {
   display: block;
-  animation: appear 0.6s;
+  animation: appear;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.overlay-show {
+  display: block;
+}
+
 
 .modal-error {
-  animation: shake 0.6s;
-}
-
-.modal-close {
-  display: none;
-  animation: appear 0.6s;
+  animation: shake 0.5s;
+  z-index: 8;
 }
 
 .search-item input[type="text"] {
