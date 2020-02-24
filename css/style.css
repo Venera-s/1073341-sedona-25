@@ -360,7 +360,7 @@ html {
 
 .modal-form {
   position: relative;
-  display: none;
+  /* display: none; */
 }
 
 .search-form {
@@ -456,22 +456,36 @@ p.search-amount {
 
 .btn-calendar {
   position: absolute;
-  right: 10px;
+  top: 9px;
+  right: 9px;
+  padding: 0;
   background-color: transparent;
   border: none;
 }
 
-.btn-calendar path {
-  fill: #cacaca;
+.btn-calendar:focus {
+  outline: 2px solid #e5e5e5;
 }
 
-.btn-calendar:hover path {
-  fill: #000000;
+.icon-calendar::before {
+  content: "\e801";
+  font-size: 21px;
+  margin: 0;
+  color: #cacaca;
 }
 
-.btn-calendar:active path {
-  fill: #81b3d2;
+.icon-calendar:hover::before {
+  color: #000000;
 }
+
+.icon-calendar:active::before {
+  color: #81b3d2;
+}
+
+.icon-calendar:focus::before {
+
+}
+
 
 .btn-amount {
   display: block;
@@ -606,30 +620,27 @@ a.social-button {
 }
 
 
-.twitter-icon:active::before,
-.facebook-icon:active::before,
-.youtube-icon:active::before {
+.icon-twitter:active::before,
+.icon-facebook:active::before,
+.icon-youtube-play:active::before {
   opacity: 0.3;
 }
 
 
-.twitter-icon::before {
+.icon-twitter::before {
   content: "\f099";
-  padding: 13px;
   font-size: 22px;
   color: #ffffff;
 }
 
-.facebook-icon::before {
+.icon-facebook::before {
   content: "\f09a";
-  padding: 13px;
   font-size: 22px;
   color: #ffffff;
 }
 
-.youtube-icon::before {
+.icon-youtube-play::before {
   content: "\f16a";
-  padding: 13px;
   font-size: 22px;
   color: #ffffff;
 }
@@ -652,7 +663,7 @@ a.social-button {
 }
 
 .logo-copyright:active path{
-fill: #bdbbbc;
+  fill: #bdbbbc;
 }
 
 /*-------------------------------HOTELS PAGES---FILTERS-----------------------------*/
@@ -960,8 +971,8 @@ fill: #bdbbbc;
   text-align: right;
 }
 
-.star-icon::before {
-  content: "\f005";
+.icon-star-empty::before {
+  content: "\e800";
   font-size: 17px;
   color: #81b3d2;
 }
