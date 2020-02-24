@@ -482,27 +482,34 @@ p.search-amount {
   color: #81b3d2;
 }
 
-.icon-calendar:focus::before {
-
-}
-
-
 .btn-amount {
-  display: block;
-  position: absolute;
-  text-align: center;
   background-color: transparent;
-  fill: #a9a9a9;
+  color: #a9a9a9;
   border: none;
 }
 
-.btn-amount:hover path,
-.btn-amount:focus path {
-  fill: #000000;
+.btn-amount:focus {
+  outline: 2px solid #e5e5e5;
 }
 
-.btn-amount:active path {
-  fill: #81b3d2;
+.reduce-adults .icon-minus::before {
+  content: "\e802";
+  position: absolute;
+  top: 0px;
+  right: 3px;
+  font-size: 21px;
+  margin: 0;
+  color: #cacaca;
+}
+
+.add-adults .icon-plus::before {
+  content: "\e803";
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-size: 21px;
+  margin: 0;
+  color: #cacaca;
 }
 
 .reduce-adults {
