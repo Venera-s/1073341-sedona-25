@@ -360,7 +360,7 @@ html {
 
 .modal-form {
   position: relative;
-  /* display: none; */
+  display: none;
 }
 
 .search-form {
@@ -461,6 +461,7 @@ p.search-amount {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .btn-calendar:focus {
@@ -483,53 +484,58 @@ p.search-amount {
 }
 
 .btn-amount {
+  position: absolute;
   background-color: transparent;
-  color: #a9a9a9;
   border: none;
+  cursor: pointer;
 }
 
 .btn-amount:focus {
   outline: 2px solid #e5e5e5;
 }
 
-.reduce-adults .icon-minus::before {
+.icon-minus::before {
   content: "\e802";
-  position: absolute;
-  top: 0px;
-  right: 3px;
-  font-size: 21px;
+  font-size: 13px;
   margin: 0;
   color: #cacaca;
 }
 
-.add-adults .icon-plus::before {
+.icon-plus::before {
   content: "\e803";
-  position: absolute;
-  top: 0px;
-  left: 3px;
-  font-size: 21px;
+  font-size: 13px;
   margin: 0;
   color: #cacaca;
 }
 
 .reduce-adults {
-  top: 12px;
-  left: 120px;
+  top: 13px;
+  left: 118px;
 }
 
 .add-adults {
-  top: 12px;
-  left: 195px;
+  top: 13px;
+  left: 194px;
 }
 
 .reduce-children {
-  top: 12px;
+  top: 13px;
   right: 82px;
 }
 
 .add-children {
-  top: 12px;
-  right: 7px;
+  top: 13px;
+  right: 6px;
+}
+
+.icon-minus:hover::before,
+.icon-plus:hover::before {
+  color: #000000;
+}
+
+.icon-minus:active::before,
+.icon-plus:active::before {
+  color: #81b3d2;
 }
 
 .btn-search {
@@ -546,6 +552,7 @@ p.search-amount {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
 }
 
 .btn-search:hover,
