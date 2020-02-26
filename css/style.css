@@ -837,10 +837,11 @@ a.social-button {
 }
 
 .sort-buttons {
+  position: relative;
   display: flex;
   margin-top: 40px;
   margin-left: auto;
-  position: relative;
+
 }
 
 .button-up {
