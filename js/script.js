@@ -2,7 +2,7 @@ var link = document.querySelector(".btn-form");
 
 var popup = document.querySelector(".modal-form");
 
-var form = document.querySelector("form");
+var form = document.querySelector(".search-form");
 var arrival = document.querySelector("[name=arrival]");
 var departure = document.querySelector("[name=departure]");
 var adults = document.querySelector("[name=adults]");
